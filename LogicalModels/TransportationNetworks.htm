@@ -1,0 +1,1253 @@
+
+<!DOCTYPE html>
+
+<html xml:lang="en-US" dir="ltr" lang="en-US">
+
+  <head>
+    
+    <!-- Slowly's Standard Webpage Bootstrap last updated 07-27-2017 -->
+        
+    <title>Transportation Networks</title>
+
+    <meta name="generator" content="Dreamweaver CC 2015">
+    <meta name="author" content="John Bonifas">
+    <meta name="created" content="As the pyramids were being built">
+    <meta name="changedby" content="Slowly">
+    <meta name="changed" content="11-16-2016">
+    
+    <meta charset="utf-8">
+        
+    <meta name="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="content-language" content="en-us">
+    
+    <!-- for devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="800">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+    
+    <!-- default - nosharing -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nocache, nosnippet, noodp, noydir">
+    <meta name="Googlebot" content="noindex, nofollow, noarchive, nocache, nosnippet, noodp, noydir">
+    <meta name="google" content="notranslate">
+    
+    <!-- uncomment this and the next 2 comment lines for sharing  
+    <meta name="robots" content="index, follow, archive, cache, snippet, odp, ydir">
+    <meta name="googlebot" content="index, follow, archive, cache, snippet, odp, ydir">
+    <meta name="google" content="notranslate">
+    
+    <!-- 
+      Facebook/Google OpenGraph for sharing posts -- see ogp.me. og:url and canonical must be the same 
+      Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/ 
+      all the og: properties can be found at: http://ogp.me/ns/ogp.me.ttl
+    
+    <meta property="fb:app_id"       content="874872455992127"
+    <link rel="canonical"            href="http://www.deckerd26354.net/shared/MyFonts.htm">
+    <meta property="og:url"          content="http://www.deckerd26354.net/shared/MyFonts.htm">
+    <meta property="og:site_name"    content="Pudnik's Virtual Server">
+    <meta property="og:type"         content="article">
+    <meta property="og:title"        content="My Online Fonts">
+    <meta property="og:description"  content="For web developers">
+    <meta property="og:image"        content="http://www.deckerd26354.net/shared/assets/canonical_graduate.png">
+    <meta property="og:image:type"   content="image/png">
+    <meta property="og:image:height" content="320">
+    <meta property="og:image:width"  content="200">
+    <meta property="og:locale"       content="en_US">
+    <meta property="article:author"  content="Slowly">
+    
+    <link rel="icon" type="image/x-icon"          href="http://www.deckerd26354.net/shared/assets/favicon_graduate.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.deckerd26354.net/shared/assets/favicon_graduate.ico">
+    <link rel="apple-touch-icon"                  href="http://www.deckerd26354.net/shared/assets/favicon_graduate.ico">     
+    <link rel="apple-touch-icon" sizes="48x48"    href="http://www.deckerd26354.net/shared/assets/favicon_graduate.ico"> 
+    <link rel="apple-touch-icon" sizes="76x76"    href=""> 
+    <link rel="apple-touch-icon" sizes="120x120"  href=""> 
+    <link rel="apple-touch-icon" sizes="152x152"  href=""> 
+    <link rel="apple-touch-icon" sizes="180x180"  href="">  
+    -->
+    
+    <!-- My OpenAuth...I'll fix this someday -->
+    <!-- <link rel="openid.server" href="http://www.myopenid.com/server"> -->
+    <!-- <link rel="openid.delegate" href="http://Pudnik.myopenid.com/"> -->
+    
+   <!-- ***************************************************************************** 
+    ONLINE DHTML EDITORS
+      pagedemos.com
+      codepen.io
+      jsfiddle.net
+  ******************************************************************************** -->
+    
+    
+   <!-- ***************************************************************************** 
+    FRAMEWORKS AND INCLUDES
+      servers
+        cdnjs.cloudflare.com
+        apis.google.com
+  ******************************************************************************** -->
+    
+  <!-- My Webfonts Collection for HTML 5 10-16-2016 -->
+  <!-- <link rel="stylesheet" type="text/css" href="http://www.deckerd26354.net/shared/MyFonts.css"> -->
+  
+  <!-- Normalizer: 'normalizes' certain HTML tags to make it even better looking and printing. Crashes my Dreamweaver for OSX, and was removed.
+
+  <!-- bootstrap. NOTE: bootstrap.js will steal your fonts and font sizes; use IDs to override it. 
+       css crashes my Dreamweaver for OSX, and was removed. --> 
+
+  <!-- a much lighter CSS reset system than bootstrap. But it messes with my borders and puts an unwanted HR, and was removed. -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta9/shoelace.css"> -->
+  
+  <!-- Wenk: a tooltip API. Crashed my Dreamweaver for OSX, and was removed. -->
+  
+  <!-- Kute: an HTML5 animation API. Error in javascript version 1.6.2, so removed -->
+  
+  <!-- 
+    font-awesome: 675 icons and SVG fonts (current version as of 06-02-2017) 
+    CDN: https://www.bootstrapcdn.com/fontawesome/ 
+    HOM: http://fontawesome.io
+    
+    USAGE
+    -----
+    with font-awesome version 4, a new syntax for icon usage is presented, and is incompatible with version 3 syntax. It is:
+    <i class="fa {IconClassName} {modifier, i.e. fa-3x} {...}"></i>
+  -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- jQuery -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script> 
+  
+  <!-- fotorama jquery-based photo gallery instructions are at fotorama.io -->
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+  <!-- Velocity: jQuery plugin for high performance animation -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script> 
+  
+  <!-- Vue: front-end framework -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js"></script> 
+  
+  <!-- ExtJS: front-end framework -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
+  
+  <!-- Ionic: mobile framework -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ionic/1.3.2/js/ionic.min.js"></script>
+  
+  <!-- Google+ -->
+  <script language="javascript" type="application/javascript" src="https://apis.google.com/js/plusone.js"></script> 
+  
+  <!-- mootools: An Object-Oriented JavaScript framework designed for the intermediate to advanced JavaScript developer -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script> 
+    
+  <!-- Gauge: HTML 5 canvas gauges -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gauge.js/1.2.1/gauge.min.js"></script> 
+       
+  <!-- Three: HTML 5 WebGL 3D framework -->
+  <script language="javascript" type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script> 
+       
+    <!-- MY CUSTOM CSS ---------------------------------------------------------------------------------------------------------- -->
+     
+   <style type="text/css">
+
+/* 
+      Last Updated for HTML 5 07-23-2017 
+    
+      Online WYSIWYG CSS Editors
+      
+      http://selfcss.org/
+        
+    */
+    @charset "utf-8";
+    
+    /* Redefines */
+    
+    BODY{font-family:Arial;max-width:800px;font-size:10pt;}
+    P, TD, TH{font-family:Arial;font-size:10pt;}
+    ASIDE{display:block;margin:15px;}
+    HEADER{display:block;text-align:center;}
+    NAV
+    {
+      display:block;
+      padding:10px;
+      font-size:10px;
+      margin:5px;
+      text-align:center;
+      background-color:transparent;
+    }
+    SECTION{max-width:98%;padding:10px;}
+    ARTICLE{margin: 10px;padding: 10px;border-radius: 10px;}
+    FOOTER{clear: both;display: block;padding: 15px;}
+    H1,H2,H3,H4,H5,H6{page-break-after:avoid;}
+    LI{padding:5px;}
+    CODE{font-family:courier;font-size:10pt;}
+    PRE{font-size:9pt; padding:2px;width:600px;}
+    FIGURE{padding:8px;}
+    FIGIMAGE{break-after:always;}
+    FIGCAPTION{margin: 2px;font-size: 11px;font-style:italic;color:#444;}
+    
+    A:LINK{}    /* normal */
+    A:VISITED{} /* visited */
+    A:HOVER{}   /* hovering */
+    A:ACTIVE{}  /* click */
+
+    /* IDs */
+    
+    #container{width: 1024px;}
+    #content{width: 99%; border: 1px solid green;}
+    #rootCell{ text-align:left; vertical-align:text-top;}
+    
+    /* 
+      The bootstrap framework steals your custom fonts and font sizes.
+      Using IDs here will override bootstrap's changes because IDs have
+      the highest CSS priority.
+    */
+    #bootstrap-font-override{font-family: Arial;}
+        
+    /* Classes */
+        
+    /* My classes that I've developed myself */
+    
+    /* classes I use all the time */
+    .acmnSnippet {font-weight:bold;font-style:italic;}
+    .acmnMyAssignment{border:1px green solid;font-weight:bold;}
+    .classDate{border:2px red solid;font-weight:bolder;text-decoration:underline;}
+    .acmnMyAnswer{border:1px black solid;}
+    .acmnDone{background-color: LightGrey;}
+    .acmnGroupProject{background-color: rgb(170, 255, 170);}
+    .acmnCodeIt{font-family:courier;}
+    .acmnUnderlineIt{text-decoration:underline;}
+    .acmnImportant1{color:red; font-weight:bold; font-size:12pt;font-family:sans-serif;}
+    .acmnImportant2{font-family:verdana;font-weight:bold;color:red;}
+    .acmnKeywords {color: #D31242;font-size: 14pt;}
+    
+    .redSmall{line-height:18.0pt;font-size:8pt;color:#A81817;}
+    .redLight{color:#ff3300;}
+    .greyBehind 
+    {
+      background-color: #555;
+      display:block;
+      margin: 10px;
+      padding: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      -webkit-box-shadow: 2px 2px 20px #888;
+      -webkit-transform: rotate(0deg);
+      -moz-box-shadow: 2px 2px 20px #888;
+      -moz-transform: rotate(0deg);
+    }
+
+    /* for backward compatibility only. Use figure and figcaption instead */
+    .acmnImageCaption{margin: 2px;font-size: 12px;font-style:italic;}  
+    .greyAddressNormal{font-size:8pt;color:gray;}
+    .greyAddressItalic{font-size:12px;font-weight: 300;color:gray;font-style:italic}
+    .LimeLine{border-bottom: 2px solid #0bce7e;width:200px;}
+    .pinkItalic{font-style:italic;color:#EF118C;}
+    .acmnCursiveHandwriting{font-family: 'Edwardian Script ITC'; font-size:18pt; color: Navy;}
+    .greenGreen1{font-weight:bold; color:#3B783B;}
+    .asideLeft{float:left;border:1px solid #999;}
+    .asideRight{float:right;border:1px solid #999;}
+    .blueCornflower{background-color: #8CA4D4;color: #2F2F65;font-weight: bold;font-size: 18px;}
+    
+    /* My header classes */
+    
+    .clsH0{font-size:72pt;font-weight:bolder;}
+    .clsH1{font-size:64pt;font-weight:bolder;}
+    .clsH2{font-size:48pt;font-weight:bolder;}
+    .clsH3{font-size:24pt;font-weight:bolder;}
+    .clsH4{font-size:18pt;font-weight:bolder;}
+    .clsH5{font-size:16pt;font-weight:bolder;}
+    .clsH6{font-size:14pt;font-weight:bold;}
+    .clsH7{font-size:12pt;font-weight:bold;}
+    .clsH8{font-size:10pt;font-weight:bold;}
+    .clsH9{font-size:8pt;font-weight:bold;}
+
+    /* stolen from CPI111 ASU Fall 2013 */
+    .greenLightBig{color: #92C500;font-family: serif;font-weight: bold;font-size: 18pt;}
+    .greenOliveForeground{color:#556B2F;}
+    .greenOliveBackground{color:white; background-color:#556B2F;}
+    .paleBackgroundPink{background-color:#ffe1ff;}
+    .paleBackgroundLightGrey{background-color:#eff0f1;}
+    .paleBackgroundGold{background-color:#fff7e5;}
+    .pinkyDashed{background-color:#ffe1ff;border:1px dashed fuchsia;}
+    
+    /* webkit complex style class-is-broken indicators */
+    .acmnDropShadow 
+    {
+      -moz-box-shadow: 3px 3px 4px #999; /* Firefox */
+      -webkit-box-shadow: 3px 3px 4px #999; /* Safari/Chrome */
+      box-shadow: 3px 3px 4px #999; /* Opera and other CSS3 supporting browsers */
+    }
+
+    .acmnRaisedBox 
+    {
+      -moz-box-shadow: 3px 3px 4px #999; /* Firefox */
+      -webkit-box-shadow: 3px 3px 4px #999; /* Safari/Chrome */
+      box-shadow: 3px 3px 4px #999; /* Opera and other CSS3 supporting browsers */
+      border-top: 1px solid #CCC;
+      border-left: 1px solid #CCC;
+    }
+
+    .SlapStamp
+    {
+      color: #F47D31;
+      background-color: #fff;
+      -webkit-box-shadow: 2px 2px 20px #888;
+      -webkit-transform: rotate(-45deg);
+      -moz-box-shadow: 2px 2px 20px #888;
+      -moz-transform: rotate(-45deg);
+      position: absolute;
+      padding: 0px 150px;
+      text-align:center;
+    }
+    
+    /* Stolen from Eric Meyer meyerweb.com */
+    .blueSky{background: #B4D5FF; font-weight: bold;}
+    .yellowWarning {background: #FF8; color: red; border: 2px solid; padding: 1em;}
+    
+    /* Stolen from Stack Overflow */
+    .acmnDashedAlert
+    {
+      padding:5px;
+      font-weight:bold;
+      margin-bottom:10px;
+      margin-top:5px;
+      border:2px dotted #AE0000;
+    }
+    .btnStackOverflow
+    {
+      color:#3E6D8E;
+      background-color:#E0EAF1;
+      border-bottom:1px solid #3E6D8E;
+      border-right:1px solid #7F9FB6;
+      padding:3px 4px 3px 4px;
+      margin:2px 2px 2px 0;
+    }
+    .whiteBlack
+    {
+      color:#fff;
+      background-color:#333;
+      border:1px solid #333;
+      margin:0 3px 3px 0;
+      padding:0px 6px 0px 3px;
+      display:inline-block;
+    }
+    .orangeYellowBack{background-color:#ffefc6;}
+    .orangeLightBack{background-color:#ff9900;color:white;}
+    .orangeDarkBack{background-color:#df5c13;color:white;}
+    .orangeLightFore{color:#ff9900;}
+    .orangeDarkFore{color:#df5c13;}
+    
+    .redWarning
+    {
+      background-color:#E23535;
+      color:#FFFFFF;
+      font-size:10px;
+      padding:0 5px 1px;
+    }
+    
+    /* Stolen from javadoc */
+    .mauveDarkBack{background:#BBBBFF;}
+    .mauveLightBack{background:#DDDDFF;}
+    .mauveDarkFore{color:#5555FF;}
+    .mauveLightFore{color:#BBBBFF;}    
+    .blueDark{background-color:#00008B;color:#FFFFFF;}
+    
+    /* Stolen from John Urbanek */
+    .blueBlack{background-color: #333333;color:#00CCFF;text-align:center;font-style:italic;}
+    .blueBold{color:#3366FF;font-weight:bolder;}
+    .navy{color:navy;}
+    .navyBold{color:navy;font-weight:bold;}
+    .aquaCyanNormal{color:#2b91af;}
+    .aquaCyanBold{color:#2b91af;font-weight:bold;}
+    .aquaNormal{color:#0078C0;}
+    .aquaBold{color:#0078C0;font-weight:bold;}
+    
+    /* Stolen from Adobe */
+    .adobe_s1 {color: #58595B;font-size: 6pt;}
+    .adobe_s2 {color: #58595B;font-size: 8pt;}
+    .adobe_s3 {color: #58595B;font-size: 12pt;}
+    .adobe_s4 {color: #58595B;font-size: 14pt;}
+    .adobe_s5 {color: #58595B;font-size: 18pt;}
+    .adobe_s6 {color: #D31242;font-size: 8pt;}
+    .adobe_s7 {color: #D31242;font-size: 12pt;}
+    .adobe_s8 {color: #D31242;font-size: 14pt;}
+    .adobe_s9 {color: #D31242;font-size: 18pt;}
+    .adobe_s10 {color: #BE2D00; font-size: 24pt;}
+    .adobe_s11 {color: #BE2D00; font-size: 32pt;}
+    .adobe_s12 {color: #007DC5;font-weight: bold;font-size: 6pt;}
+    .adobe_s13 {color: #007DC5;font-weight: bold;font-size: 8pt;}
+    .adobe_s14 { color: #40458C; font-size: 8pt; }
+    .adobe_s15 { color: #40458C; font-size: 10pt; }
+    .adobe_s16 { color: #40458C; font-size: 12pt; }
+    .adobe_s17 { color: #40458C; font-style: italic; font-weight: bold; font-size: 12pt; }
+    .adobe_s18 { color: #40458C; font-size: 18pt; }
+    .adobe_s31 {color: #231F20; font-weight: normal; font-size: 8pt; }
+    .adobe_s41 {color: #00ADEF; font-weight: normal; font-size: 10pt; }
+    .adobe_s51 {color: #00ADEF; font-weight: normal; font-size: 8pt; }
+    
+    /* stolen from Radek Suski and Protostar */
+    
+    .aqua1 {color:white;background-color:#61b6ff}
+    .aqua2 {color:white;background:#2892ff!important;}
+    .aqua3{color:yellow;background:#2e9fff;}
+    .aquaComplex
+    {
+      color:Yellow;
+      text-shadow:0 -1px 0 rgba(0,0,0,.25);
+      background-color:#49afcd;
+      background-image:-webkit-linear-gradient(to bottom, #5bc0de, #2f96b4);
+      background-image:linear-gradient(to bottom, #5bc0de, #2f96b4);
+      background-repeat:repeat-x;  
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+      border-color:#2f96b4 #2f96b4 #1f6377;
+      border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+      filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    }
+    .aqua5{color:white;background-color:#2f96b4;}
+    .greenTeal1{background:#6fa42a;}
+    .greenTeal2{background-color:#51a351;}
+    .greenWhite1{color:white;background:#4bad00;}
+    .goldBlack{background:#ffc62e;}
+    .btnBlue
+    {
+      text-shadow:0 -1px 0 rgba(0,0,0,.25);
+      background-color:#004cd6;
+      background-image:-webkit-linear-gradient(to bottom, #0069d6, #0022d6);
+      background-image:linear-gradient(to bottom, #0069d6, #0022d6);
+      background-repeat:repeat-x;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0069d6', endColorstr='#ff0022d6', GradientType=0);
+      border-color:#0022d6 #0022d6 #00168a;
+      border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+      filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    }
+    .btn-warning
+    {
+      text-shadow:0 -1px 0 rgba(0,0,0,.25);
+      background-color:#ff855c;
+      background-image:-webkit-linear-gradient(to bottom, #ff9c7b, #ff632e);
+      background-image:linear-gradient(to bottom, #ff9c7b, #ff632e);
+      background-repeat:repeat-x;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9c7b', endColorstr='#ffff632e', GradientType=0);
+      border-color:#ff632e #ff632e #e13900;
+      border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+      filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    }
+    .btnSunburn
+    {
+      text-shadow:0 -1px 0 rgba(0,0,0,.25);
+      background-color:#da4f49;
+      background-image:-webkit-linear-gradient(to bottom, #ee5f5b, #bd362f);
+      background-image:linear-gradient(to bottom, #ee5f5b, #bd362f);
+      background-repeat:repeat-x;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+      border-color:#bd362f #bd362f #802420;
+      border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+      filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    }
+    .btnInverse
+    {
+      text-shadow:0 -1px 0 rgba(0,0,0,.25);
+      background-color:#363636;
+      background-image:-webkit-linear-gradient(to bottom, #444, #222);
+      background-image:linear-gradient(to bottom, #444, #222);
+      background-repeat:repeat-x;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+      border-color:#222 #222 #000;
+      border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+      filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    }
+    .btnFlesh{background-color:#ff632e;}
+    .btnPinkDark{background-color:#bd362f;}
+    .btnDarkie{background-color:#222;}
+    
+    /* stolen from waves.com */
+    .fleshBox1
+    {
+      background-color: #ffc4c4;
+      border: 1px solid #7b0812;
+      border-radius: 5px;
+      color: #7b0812;
+      padding: 5px 10px;
+    }
+    
+    /* stolen from net-tuts */
+    .btnBlueBlueBig
+    {
+      width:400px;
+      margin: 200px auto;
+      background: #014464;
+      background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+      background: -webkit-gradient(linear, left top, left bottom, 
+                  color-stop(0, #0E658E), color-stop(.5, #0C577A), 
+                  color-stop(.5, #014D71), to(#003E5C));
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #368DBE;
+      border-top: 1px solid #C3D6DF;
+      -moz-box-shadow: 0 1px 3px black;
+      -webkit-box-shadow: 0 1px 3px black;
+      -box-shadow: 0 1px 3px black;  
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      color:blue;
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #99FFFF;
+    }
+    .btnBlueYellowBig
+    {
+      width:400px;
+      margin: 200px auto;
+      background: #014464;
+      background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+      background: -webkit-gradient(linear, left top, left bottom, 
+                  color-stop(0, #0E658E), color-stop(.5, #0C577A), 
+                  color-stop(.5, #014D71), to(#003E5C));
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid #368DBE;
+      border-top: 1px solid #22D6DF;
+      -moz-box-shadow: 0 1px 3px black;
+      -webkit-box-shadow: 0 1px 3px black;
+      -box-shadow: 0 1px 3px black;  
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      color:Yellow;
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #EE0000;
+    }
+    .btnBlueSmall 
+    {
+      line-height: 1;
+      padding: 7px 10px;
+      font-weight: bold;
+      color: white;
+      background-color: #39c;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -khtml-border-radius: 5px;
+      border-radius: 5px;
+      -moz-box-shadow: 0 1px 3px black;
+      -webkit-box-shadow: 0 1px 3px black;
+      -khtml-box-shadow: 0 1px 3px black;
+      -box-shadow: 0 1px 3px black;  
+      text-shadow: 0 1px 0 black;
+    }
+     
+    /* stolen from ASU GPH 211 syllabus Spring 2014 Updated for NAU Fall 2016*/
+    
+    .Estilo29ASU {font-size: 30px;color: #F7C709;}
+    .Estilo31ASU {color: #87140E;}
+    .Estilo32ASU {font-size: 15px;color: #87140E;font-weight: bold;}
+    .Estilo34ASU {color: #87140E; font-weight: bold;}
+    .Estilo40ASU {font-size: 26px; color: #660000; font-weight: bold;}
+    .Estilo42ASU {color: #660000;}
+    .Estilo44ASU {color: #660000; font-weight: bold;}
+    .Estilo47ASU {color: #AA0000;}
+    .Estilo50ASU {font-size: 22px; color: #660000; font-weight: bold;}
+
+    .Estilo29NAU {font-size: 30px;color: yellow;}
+    .Estilo31NAU {color: #003E7E;}
+    .Estilo32NAU {font-size: 15px;color: #003E7E;font-weight: bold;}
+    .Estilo34NAU {color: #003E7E; font-weight: bold;}
+    .Estilo40NAU {font-size: 26px; color: #003E7E; font-weight: bold;}
+    .Estilo42NAU {color: #003E7E;}
+    .Estilo44NAU {color: #003E7E; font-weight: bold;}
+    .Estilo47NAU {color: #AA0000;}
+    .Estilo50NAU {font-size: 22px; color: #003E7E; font-weight: bold;}
+
+    /* stolen from Torrent Freak */
+    .pinky0{color:#ff4794;}
+    .pinky1{color:#e0005e;font-weight:bold;}
+    .pinky2{background:#ff7ab2;}
+    .pinky3{background:#ff4794;}
+    .pinky4{background:#e0005e;}
+    .pinky5{color:white;background-color:#ff4794;border-bottom:2px solid #ff4794;}
+    .pinky5bold{background:#ff4794;color:white;margin:0 0 1em;text-shadow:0px 1px 1px #ad0048;font-size:1.1em;font-weight:600;}
+    .pinky6{background:#ff1476;border-bottom:2px solid #ad0048;}
+    .pinky7{background:#ff4794;color:silver;}
+    .pinky8{background:#ff7ab2;color:yellow;}
+        
+    /* stolen from Scala */
+    .aquaSlider 
+    {
+      color:#666666;
+      text-shadow: 0 1px 2px rgba(0,0,0,.5);
+      background:url(http://scala-ide.org/resources/images/bg.jpg) no-repeat top center #a6e5ec;
+      padding-top:15px;padding-bottom:15px;
+      -webkit-box-shadow: inset 0 10px 60px rgba(0,0,0,.5);
+      -moz-box-shadow: inset 0 10px 60px rgba(0,0,0,.5);
+    }
+    
+    /* stolen from Paige Hector */
+    .orangeYellow2 {background-color: #f3de7e;}    
+    .greenDarkBig {color: #006300; font-size: 21.5pt;}
+
+    /* stolen from msn */
+    .greenGreen2{font-weight:bold; color:#4a844a; font-size:1.3rem; line-height:1.384;}
+    .greenGreen4{color:#0b893e;}
+    .greenGreen5{color:#3ab161;}
+    .greenWhite2{color: White; background:#00924d; height:4.4rem; font-size:1.3rem; line-height:1.384;}
+    .greenBlack1{ background:#00924d; width:100%; height:18rem;}
+    
+    /* stolen from domyownpestcontrol.com */
+    .btn_fancy
+    {
+      background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#ccc));
+      background-image: -webkit-linear-gradient(top,#eee,#ccc);
+      background-image: -moz-linear-gradient(top,#eee,#ccc);
+      background-image: -o-linear-gradient(top,#eee,#ccc);
+      background-image: linear-gradient(top,#eee,#ccc);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+      border: 1px solid #777;
+      padding: 0 1.5em;
+      margin: .5em;
+      font: 700 1em/2em Arial,Helvetica;
+      color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+      -webkit-border-radius: .2em;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3);
+      box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3)
+    }
+    .btn_fancy_gold
+    {
+      background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#E5C06B));
+      background-image: -webkit-linear-gradient(top,#eee,#E5C06B);
+      background-image: -moz-linear-gradient(top,#eee,#E5C06B);
+      background-image: -o-linear-gradient(top,#eee,#E5C06B);
+      background-image: linear-gradient(top,#eee,#E5C06B);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#E5C06B');
+      border: 1px solid #777;
+      padding: 0 1.5em;
+      margin: .5em;
+      font: 700 1em/2em Arial,Helvetica;
+      color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+      -webkit-border-radius: .2em;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3);
+      box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3)
+    }
+    .btn_fancy_teal
+    {
+      background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#2dbe60));
+      background-image: -webkit-linear-gradient(top,#eee,#2dbe60);
+      background-image: -moz-linear-gradient(top,#eee,#2dbe60);
+      background-image: -o-linear-gradient(top,#eee,#2dbe60);
+      background-image: linear-gradient(top,#eee,#2dbe60);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#2dbe60');
+      border: 1px solid #777;
+      padding: 0 1.5em;
+      margin: .5em;
+      font: 700 1em/2em Arial,Helvetica;
+      color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+      -webkit-border-radius: .2em;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3);
+      box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3)
+    }
+    .btn_fancy_blue
+    {
+      background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#004cd6));
+      background-image: -webkit-linear-gradient(top,#eee,#004cd6);
+      background-image: -moz-linear-gradient(top,#eee,#004cd6);
+      background-image: -o-linear-gradient(top,#eee,#004cd6);
+      background-image: linear-gradient(top,#eee,#004cd6);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#004cd6');
+      border: 1px solid #777;
+      padding: 0 1.5em;
+      margin: .5em;
+      font: 700 1em/2em Arial,Helvetica;
+      color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+      -webkit-border-radius: .2em;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3);
+      box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3)
+    }
+    .btn_fancy_flesh
+    {
+      background-image: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#ff632e));
+      background-image: -webkit-linear-gradient(top,#eee,#ff632e);
+      background-image: -moz-linear-gradient(top,#eee,#ff632e);
+      background-image: -o-linear-gradient(top,#eee,#ff632e);
+      background-image: linear-gradient(top,#eee,#ff632e);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#ff632e');
+      border: 1px solid #777;
+      padding: 0 1.5em;
+      margin: .5em;
+      font: 700 1em/2em Arial,Helvetica;
+      color: #333;
+      text-shadow: 0 1px 0 rgba(255,255,255,.8);
+      -webkit-border-radius: .2em;
+      border-radius: .2em;
+      -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3);
+      box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset,0 1px 0 rgba(0,0,0,.3)
+    }
+    .greyTitle{color: #666;font-size: 20px;font-weight: 700;}
+    .greenbox{background-color: #dcf5d7!important;border-top-color: #dcf5d7!important;}
+    .bluebox{background-color: #D6EFFE;}
+    .limeBanner
+    {
+      font-size: 12px;
+      background: #0f0;
+      color: black;
+      font-weight: 700;
+      text-align: center;
+    }
+    infoBoxHeading  
+    {
+      font-size: 12px;
+      font-weight: 700;
+      background: #bbc3d3;
+      color: #a52020
+    }
+    .aquaCyanDark
+    {
+      font-size: 14px;
+      color: #069;
+      font-weight: 700;
+    }
+    .navyOnYellow{color: #00F;background: #FF3;}
+    .greyBigHeading{font-size: 20px;font-weight: 700;color: #666;}
+    .orangeTiny{font-size: 10pt;font-weight: 700;color: #C60;}
+    .barInsideRed{color:#C00;background-color: #C00;}
+    .barInsideBlack{color:black;background-color: black;}
+    .barInsideYellow{color:gold;background-color:gold;}
+    .barInsideLime{color:#0f0;background-color:#0f0;}
+    .barInsideGrey{color: #595959;background-color: #595959;}
+    .barInsideBlue{color: blue;background-color:blue;}
+    .barInsideGreen{background: #2F9512;color: #2F9512;}
+    .barInsideGold{background: #ebb73d;color: #ebb73d;}
+
+    /* stolen from Ian Webster (textbelt)*/
+    .greyLightTinyMute {color: #909090;font-size: 10px;}
+
+    /* stolen from my committee chair, Dr. Huang */
+    .blueHuang{color: #00C;font-weight:bold;}
+    .blueHuangLight{color:#3366FF;}
+    
+    /* stolen from amethystwebsitedesign.com */
+    .acmnSteelDashedBox 
+    {
+      border: 4px dashed #046ca3;
+      padding: 10px;
+      box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
+    }
+    .acmnPurpleBorderSilver
+    {
+      border: 1px solid silver;
+      border-right: 1px solid darkgray;
+      border-bottom: 1px solid darkgray;
+      -moz-box-shadow: inset 0 0 0 3px #7b6dc0;
+      -webkit-box-shadow: inset 0 0 0 3px #7b6dc0;
+      box-shadow: inset 0 0 0 3px #7b6dc0; 
+      padding: 24px 20px;
+      margin: 24px 0;
+      text-align: left;
+    }
+    
+    /* Stolen from NBC News */
+    nav
+    {
+      background-color:transparent;
+      padding-bottom:.375em
+    }
+    .asidePullQuote
+    {
+      content:" ";
+      display:table;
+      float:right;
+      width:50%;
+      color:#232323;
+      font-family:'Lucida Console', Monaco, monospace;
+      line-height:1.0534979424;
+      margin-bottom:0;
+      margin-top:6px;
+      border-left: 1px solid grey;
+    }
+    .greyLightTiny
+    {
+      color:#969696;
+      font-size:10pt;
+    }
+    .pointerTriangleLeft
+    {
+      vertical-align:middle;
+      display:inline-block;
+      -webkit-transform:rotate(360deg);
+      -ms-transform:rotate(360deg);
+      transform:rotate(360deg);
+      border-width:1.0678710938em .5339355469em;
+      border-style:solid;
+      border-color:transparent;
+      border-left-color:#940006;
+      border-right-width:2;
+      height:0;
+    }
+    .bodyClassThemeDark
+    {
+      color:#ccc;
+      background-color:#111;
+      margin-bottom:1.125em;
+      padding-top:1.125em;
+      margin-top:-1.125em
+    }
+    .divClassThemeWeather
+    {
+      background:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), color-stop(40%, #fff), to(rgba(197,209,228,.75)));
+      background:-webkit-linear-gradient(top, rgba(255,255,255,0)0, #fff 40%, rgba(197,209,228,.75)100%);
+      background:linear-gradient(to bottom, rgba(255,255,255,0)0, #fff 40%, rgba(197,209,228,.75)100%)
+    }
+    .divClassThemeNightly
+    {
+      color:#ccc;
+      padding-top:1.125em;
+      margin-top:-1.125em;
+      background:-webkit-gradient(linear, left top, left bottom, from(rgba(17,17,17,0)), color-stop(40%, #111), to(#111));
+      background:-webkit-linear-gradient(top, rgba(17,17,17,0)0, #111 40%, #111 100%);
+      background:linear-gradient(to bottom, rgba(17,17,17,0)0, #111 40%, #111 100%)
+    }
+    .divClassThemeFeature
+    {
+      background:#E9EDF0;
+      background:-webkit-gradient(linear, left top, left bottom, from(#FFF), color-stop(40%, #E9EDF0));
+      background:-webkit-linear-gradient(top, #FFF 0, #E9EDF0 40%);
+      background:linear-gradient(to bottom, #FFF 0, #E9EDF0 40%)
+    }
+    .blueSteelIndentDark
+    {
+      color:#5172a0;
+      padding-bottom:1.3333333333em;
+      padding-top:1.3333333333em;
+      font-size:1.125em;
+      line-height:1.6666666667
+    }
+    .blueSteelIndentLight
+    {
+      color:#4372b8;
+      margin-right:.474609375em;
+      font-size:.7901234568em;
+      line-height:1.8984375
+    }
+    .btnGold
+    {
+      margin-bottom:1.3333333333em;
+      font-weight:700;
+      padding-right:1.25em;
+      padding-left:1.25em;
+      padding-top:.46875em;
+      color:#1f1f1f;
+      background-color:#E5C06B;
+      -webkit-border-radius:0 0 5px 5px;
+      border-radius:0 0 5px 5px;
+      font-size:.7023319616em;
+      line-height:1.2013549805
+    }
+    
+    /* Stolen from Wordpress */
+    .btn-Green
+    {
+      background-color: #4DB24C;
+      color: white;
+      padding: 4px;
+      font-weight: bold;
+      text-shadow: 0 0.05em 0.05em #1b7a1a;
+      border-left: solid 1px #49a346;
+      border-top: solid 1px #49a346;
+      border-right: solid 1px #1f7c1e;
+      border-bottom: solid 1px #1f7c1e;
+    }
+    .btn-Aqua
+    {
+      background-color: #4F97C9;
+      color: white;
+      padding: 4px;
+      font-weight: bold;
+      text-shadow: 0 0.05em 0.05em #1b7a1a;
+      border-left: solid 1px #49a346;
+      border-top: solid 1px #49a346;
+      border-right: solid 1px #1f7c1e;
+      border-bottom: solid 1px #1f7c1e;
+    }
+    
+    /* stolen from Evernote */
+    .Btn_emph
+    {
+      font-weight: 500;
+      color: White;
+      background-color: #2dbe60;
+      border-color: #1fae52
+    }
+    .fleshbox2
+    {
+      list-style: none;
+      border: 1px solid #b92219;
+      background-color: #ffd1d1;
+      padding: 8px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word
+    }
+    .greenBlack2
+    {
+      background-color: #2dbe60;
+      width: 100%;
+      height: 48px;
+      border-bottom: 1px solid #259d4f
+    }
+    .navBarOneLetterLeft
+    {
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5f6fb', GradientType=0);
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      border: 1px solid #88b9c9;
+      border-radius: 50px;
+      color: #747474;
+      background-color: #f5fbfd;
+      background-image: -moz-linear-gradient(top, #fff, #e5f6fb);
+      background-repeat: repeat-x;
+      line-height: 1.41666667;
+      font-size: 1em;
+      font-weight: 400;
+      text-align: left;
+      text-overflow: clip;
+      padding: 0 4px;
+      width: 10px;
+      display: inline-block;
+    }
+    .greyDark
+    {
+      height: auto;
+      overflow: hidden;
+      background-color: #484848;
+      color:white;
+      margin-top: 60px
+    }
+    .greenOlive
+    {
+      background-color: #95d162;
+      border-color: #2b7143
+    }
+    .creamWarning
+    {
+      background-color: #fef4d1;
+      border: 1px solid #ebd174;
+      margin-bottom: 16px;
+      padding: 5px 16px 5px 16px;
+      color: red;
+      font-weight: bold;
+    }
+    .blueSteelCyanBold{color: #4183c4;font-weight: bold;}
+    .blueSteelNormal{color:#5172a0;}
+    .blueSteelUnderlineBorder
+    {
+      color: #5172a0;
+      text-decoration: underline;
+      outline: thin dotted #4a8db8;
+    }
+    .blueSteelUnderline
+    {
+      color: #5172a0;
+      text-decoration: underline;
+    }
+
+    /* Stolen from Microsoft */
+    .brownCodeBox
+    {
+      font-family: Consolas;
+      font-size:13px;
+      color: rgb(125, 39, 39); 
+      background-color: rgb(239, 240, 241);
+      display: block;
+      width:600px;
+    }
+    
+    /* Stolen from it-ebooks */
+    .aquaHeading
+    {
+      font-family: Verdana, Geneva, sans-serif;
+      color: #08c;
+    }
+    
+    /* Stolen from Dana Mandino, NAU */
+    .purpleBig{font-size:20pt;color:#BD1398;}
+    .purpleMed{font-size:16pt;color:#BD1398;}
+    .purpleSml{font-size:12pt;color:#BD1398;}
+
+    /* stolen from github */
+    .purpleText{color: #6f42c1;}
+    .purpleOutline{padding: .9em 1.25em; color: #9f7be1; background: transparent; border: 1px solid purple; border-radius: .3em;}
+    .purpleDivBackground{color:white; background-color: #643ab0; background-image: linear-gradient(-180deg, #7e55c7 0%, #643ab0 90%); }
+    .purpleTextBackground{color:white; background-color: #6f42c1;}
+
+    /* stolen from Thibaut Courouble (http://www.cssflow.com) 
+       btnGlossyBlue is the master. You have to include it in order to use
+       the other colors.
+    */
+    
+    .btnGlossyBlue
+    {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      min-width: 96px;
+      line-height: 46px;
+      padding: 0 24px;
+      font-size: 14px;
+      color: white;
+      text-align: center;
+      text-shadow: 0 1px #154c86;
+      background-color: #247edd;
+      background-clip: padding-box;
+      border: 1px solid;
+      border-color: #1c65b2 #18589c #18589c;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+      background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+      background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+      background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04)); 
+    }
+    .btnGlossyBlue:before  
+    {
+      content: '';
+      position: absolute;
+      top: -25%;
+      bottom: -25%;
+      left: -20%;
+      right: -20%;
+      border-radius: 50%;
+      background: transparent;
+      -webkit-box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+    }
+    
+    .btnGlossyBlue:hover { background-color: #1a74d3; }
+    
+    .btnGlossyBlue:active 
+    {
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 -1px #154c86;
+      background: #1f71c8;
+      border-color: #113f70 #154c86 #1c65b2;
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+      background-image: -webkit-linear-gradient(top, #1a5da5, #3a8be0);
+      background-image: -moz-linear-gradient(top, #1a5da5, #3a8be0);
+      background-image: -o-linear-gradient(top, #1a5da5, #3a8be0);
+      background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);
+    }
+    
+    .btnGlossyBlue:active:before 
+    {
+      top: -50%;
+      bottom: -125%;
+      left: -15%;
+      right: -15%;
+      -webkit-box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Green */
+    .btnGlossyGreen
+    {
+      text-shadow: 0 1px #0d4d09;
+      background-color: #1ca913;
+      border-color: #147b0e #11640b #11640b;
+    }
+    
+    .btnGlossyGreen:hover { background-color: #159b0d; }
+    
+    .btnGlossyGreen:active 
+    {
+      text-shadow: 0 -1px #0d4d09;
+      background: #189210;
+      border-color: #093606 #0d4d09 #147b0e;
+      background-image: -webkit-linear-gradient(top, #126d0c, #20c016);
+      background-image: -moz-linear-gradient(top, #126d0c, #20c016);
+      background-image: -o-linear-gradient(top, #126d0c, #20c016);
+      background-image: linear-gradient(to bottom, #126d0c, #20c016);
+    }
+    
+    /* Red */
+    .btnGlossyRed 
+    {
+      text-shadow: 0 1px #72100d;
+      background-color: #cd1d18;
+      border-color: #9f1713 #891310 #891310;
+    }
+    
+    .btnGlossyRed:hover { background-color: #c01511; }
+    
+    .btnGlossyRed:active
+    {
+      text-shadow: 0 -1px #72100d;
+      background: #b61a15;
+      border-color: #5b0d0b #72100d #9f1713;
+      background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+      background-image: -moz-linear-gradient(top, #921511, #e4201b);
+    }
+    
+    /* stolen from foliovision.com */
+    
+    .blackCircle 
+    {
+      background-color: #000;
+      color: #fff;
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto 18px;
+      text-align: center;
+      overflow: hidden;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
+      border-radius: 60px;
+      position: relative
+    }
+    
+    .fleshBackgroundPale
+    {
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1
+    }
+    .aquaBackgroundPale 
+    {
+      color: #31708f;
+      background-color: #d9edf7;
+      border-color: #bce8f1
+    }
+    .greenBackgroundPale  
+    {
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+      color: #3c763d
+    }
+    .creamBackgroundPale
+    {
+      color: #8a6d3b;
+      background-color: #fcf8e3;
+      border-color: #faebcc
+    }
+    
+    .btnCyan 
+    {
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid #046a9e;
+        background: #9ecce2;
+        color: #333;
+        margin: 8px 0;
+        color: #000 !important
+    }
+    
+    .greenBannerPale
+    {
+      padding: 6px 9px;
+      margin: 0 auto 25px;
+      box-sizing: border-box;
+      background: #e7f7d3;
+      border: 1px solid #6c3;
+      color: green;
+    }
+    .redBannerPale
+    {
+      padding: 6px 9px;
+      margin: 0 auto 25px;
+      box-sizing: border-box;
+      background: #ffebe8;
+      border: 1px solid #C00;
+      color: red; 
+    }
+    .redBannerPalePlusBlue
+    {
+      padding: 6px 9px;
+      margin: 0 auto 25px;
+      box-sizing: border-box;
+      background: #ffebe8;
+      border: 1px solid #C00;
+      color: #007acc;
+    }
+    
+    /* stolen from slashdot */
+    
+    .greenWhite3 
+    {
+      height: 30px;
+      color: white;
+      background-color: #004d4d;
+      z-index: 4; 
+      padding: 0 5px;
+      line-height: 20px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out; 
+    }
+    .orangeDarkerBack 
+    {
+      height: 30px;
+      color: white;
+      z-index: 4; 
+      padding: 0 5px;
+      line-height: 20px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out; 
+      background-color: #b7590b; 
+    }
+              
+  </style>
+  
+  <!-- blinking text (must be in its own style tag) -->
+  <style>   
+    .blinkMe 
+    {
+      animation-duration: 1s;
+      animation-name: blink;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(2, start);
+    }
+    @keyframes blink 
+    {
+      80% 
+      {
+        visibility: hidden;
+      }
+    }
+  </style>
+
+  <!-- strobing effect fill. The class to get it to work is called "thumb", it only works when this stylesheet is enabled, and it's only in grey color -->  
+  <!--<link rel="stylesheet" type="text/css" href="http://cdn.gatehousemedia.com/assets/css/20170705-1707/default.min.css"> -->
+
+</head>
+    
+<body>
+  
+  <table id="container">
+  <tr><td>
+  <table id="content">
+  <tr>
+  <td id="rootCell">
+  
+  
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="715px" height="703px" viewBox="-0.5 -0.5 715 703" content="&lt;mxfile userAgent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36&quot; version=&quot;9.4.7&quot; editor=&quot;www.draw.io&quot; type=&quot;google&quot;&gt;&lt;diagram id=&quot;6e3c378e-9db4-6f85-7c14-6bcdffbf5882&quot; name=&quot;Page-1&quot;&gt;7Vtbc5s6EP41fkwGCYHJo5MmbWfSTqfuzGmfMjLIthpAVMixfX79kUAYxCV1jw22M+1DA6sLYr/9dleLPLLvos17jpPlJxaQcAStYDOy340gBNYYyT9Kss0l7tjKBQtOA92pFEzpv6QYqaUrGpDU6CgYCwVNTKHP4pj4wpBhztna7DZnofnUBC9IQzD1cdiU/kMDscylnmOV8g+ELpbFk4GlWyJcdNaCdIkDtq6I7PuRfccZE/lVtLkjoVJeoZd83ENH625hnMRinwE2gmA2BrblzQJieeBKz/CCw5V+2RF0QznX7ZzJKeWKxVarwf21YkXDVZqBNJEdAEo2ZaO8Wqi/3ziO04RxgQVlsez2mYg1489pMb1cY/6EvL9Wz+5hUJCNki9FFEoBkJep4OyZ3LGQcSmJWUzUYmgY1kQ4pItY3vpSJ0TKb18IF1SiOdENEQ0C9Zjb9ZIKMk2wr565lrYrZZyt4oAodVm7ZVX1WyhMzkk2FZHW93vCIiL4VnbRrbabj9C2X1jCujQkUNBhWTGioh/WtrvYTVzCKy80wu1ou84NQIg4c+TfoGAOrxx0ONywDe4J5QrsvdE1tdyGQwV4NZN2CtBpwXPGhGDRcdBCJlpO4bqqcMlFNOCye4HL6Q+uNFP3pcMFLfuc8Br3hJf0pjS8fHK5qn8FLdsD1zfVf/thB90esHO7sQvoSyt0KkRd6WijsAvJXDSxK2aRhIt3eLJExqyF0rMc93UVkiq41Z4VcbYMU3rwynCkzCGepUl2b5V+3MJxoP7feQorWqXKhGckz7QEpjFRXWicNcbUp0n2PjNlf1jhka9yxl954nss1Msbs2cJgzBs/tU5poITokaHykjkmLvcUp9pvFBSVshSmUeucfisb/NX9DlLUy1tLiPN5k67cDiEekdgFLCRwSjXRtdOg0UO8pos8saHs8j2g7njgbkLEZxjZF315QCnDRQu0wMWEaJ0gMOFqwZYADQURwK58dG30g8s2YLFOLwvpbX8uKJGsqHie+X6h+pynWlU6otvv+sh2U3emLcFE7VFK/N3KXmg6i2y7j+JEFsND14JJkXlwh4ZS35HppStuE86VKB5ITBfENHRR0clpZpXIeYklJudF3PPeFTAvIND1E/p3uh8u1+Uykn39PFdr7Hpj5b0bZuQZkj4jKMW6ePTw9MkCDhJW6LI49O37savr438+trIaUJI8PRIIypaI9efqPHEoaXmqhDY01UBG/Zg+je9BhaVQ6xmQhpXmnW+8CgDi43jLsy0FR0GCzNWf27royrxpELmkLLXB/kia9ySdk51h4yXWc468f2Mv78f09nhE/7JeCX5rLdPJFqcqoS44UGIykNjUWk8M+7XDQiBPQ2oH/KD8YkTFXjMTCXA6TJb1/9PW4DbzFs6qxFnkLgU6z26+9a7xwv316jhr/eMtceohDTBuumDbZbBNpNs12PH4FudJKfdI4B9NglnxLXuXcKRUqVHXWW5cNYBz6xGugOWjhuowV724ibp4CWxrvj+dSGsg91J7mGs+7IrYz6yN0E6YJAOWCdlHfrLOlMh8LJYB/uKdeWHgosnnPmFVO4RTkk45y/hTIXYl0U4uyfC3VU+wl0848y8EnhDnkmY2T52JckhnhFoBcc44NV9JGH0tuqmzrhW9mrbh/dVN20g1x3bDi6b3lJ/64ct30w+0DzZfLj/tSKp4DT7TFGvfNINCa5WafX40DlVL+swOm2fLtpgdI5xsKQOo91LxMsrKEXMMwOeEe8GD3FdHmjgWqUe+oXRzMsVhjOufdW6qU2Rv4keVaLemAgWh3+LiVCt8J2/bmOizHx277OXRSE8thDyXIAt5GJ35xj6rs+dLktqvDEYyDocc3MKERgM1L7i9FRGA/wGzg7Ws6pd7XuIrKqB1gDbmDOjoD0UBc3tKvS8wSjY195GUfAtELCGTNtR676S4wZW3T9kODg5rp4x6ulo0zRhcapOD5xl/lxH2m6r0bYifYT8uRkY+4qMH6OEsxcSkWySd1Rtd/w3UGJHBVy7SDk+IVFBj9vYAZhaPVp4ZjRt4Ozsi/Of01Telj9SzGNt+VNP+/4/&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g transform="translate(8.5,2.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="152" height="14" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 153px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 14px">Transportation Networks</font></div></div></foreignObject><text x="76" y="13" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">&lt;font style="font-size: 14px"&gt;Transportation Networks&lt;/font&gt;</text></switch></g><rect x="10" y="554" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(51.5,551.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="41" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 43px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Airports</font></div></div></foreignObject><text x="21" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="167" y="554" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(205.5,551.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="47" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 47px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Airspace</font></div></div></foreignObject><text x="24" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="586" y="362" width="125" height="26" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(633.5,355.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="29" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 29px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Trails</font></div></div></foreignObject><text x="15" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="98" y="614.5" width="548" height="87" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(177.5,630.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="388" height="54" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 388px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: left"><span>Topological Rules</span></div><div style="text-align: left">  Airports and airspace must be contained in municipal boundary<br />  Gates must be on trails<br />  Street lights, parking lots, sidewalks, and crosswalks must be on streets</div></div></div></foreignObject><text x="194" y="33" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="21" y="361" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(63.5,358.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="39" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 39px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Streets</font></div></div></foreignObject><text x="20" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 146 424 L 183 424 L 183 375 L 219 375" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="21" y="391" width="125" height="132" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(46.5,401.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="73" height="110" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 75px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: justify"><span>Street_ID</span></div><div style="text-align: justify"><span>Type<br />Name<br />L_F_Address<br />L_T_Address<br />R_F_Address<br />R_T_Address<br />Speed_Limit<br /></span></div></div></div></foreignObject><text x="37" y="61" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="219" y="360" width="175" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(261.5,357.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="89" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 89px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Street Subtypes:</font></div></div></foreignObject><text x="45" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="219" y="390" width="175" height="132" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(225.5,414.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="161" height="82" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 163px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: justify">Interstate Highway<br />State Limited Access Highway<br />State Highway<br />Major Street<br />Arterial<br />Residential</div></div></div></foreignObject><text x="81" y="47" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 544 368 L 565 368 L 565 369 L 586 369" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="419" y="361" width="125" height="26" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(464.5,354.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="33" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 33px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Gates</font></div></div></foreignObject><text x="17" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 146 59 L 115 59 L 115 361" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="146" y="44" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(174.5,41.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="67" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 69px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Street Lights</font></div></div></foreignObject><text x="34" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 145 92 L 115 92 L 115 361" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="145" y="84" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(173.5,81.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="67" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 67px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Parking Lots</font></div></div></foreignObject><text x="34" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 147 132 L 115 132 L 115 361" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="147" y="124" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(181.5,121.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="55" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 55px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Sidewalks</font></div></div></foreignObject><text x="28" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 146 172 L 115 172 L 115 361" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="146" y="164" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(177.5,161.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="61" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 63px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Crosswalks</font></div></div></foreignObject><text x="31" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="539" y="461" width="175" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(586.5,458.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="79" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 81px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Trail Subtypes:</font></div></div></foreignObject><text x="40" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="539" y="491" width="175" height="56" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(578.5,498.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="95" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 95px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: justify">Bicycle<br />Hiking/Equestrian<br />Mixed-use</div></div></div></foreignObject><text x="48" y="26" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 627 461 L 627 425 L 649 425 L 649 388" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 146 221 L 115 221" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="146" y="206" width="125" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(188.5,203.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="39" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 41px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Signals</font></div></div></foreignObject><text x="20" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 147 269 L 117 269 L 117 268" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><rect x="147" y="254" width="175" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(218.5,251.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="31" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 31px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Signs</font></div></div></foreignObject><text x="16" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="147" y="284" width="175" height="36" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(211.5,288.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="45" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 45px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: justify">Type</div><div style="text-align: justify">Sponsor</div></div></div></foreignObject><text x="23" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="368" y="207" width="175" height="30" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(396.5,204.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="28" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 25px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-size: 12px">Improvement Districts</font></div></div></foreignObject><text x="59" y="27" fill="#000000" text-anchor="middle" font-size="25px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><rect x="368" y="237" width="175" height="36" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(438.5,241.5)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="33" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 33px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;"><div style="text-align: justify">Type</div><div style="text-align: justify">Name</div></div></div></foreignObject><text x="17" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></svg>    
+  
+  </td></tr></table>
+  </td></tr></table>
+  
+</body>
+</html>
